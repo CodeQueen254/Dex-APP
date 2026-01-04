@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Obute | Portfolio</title>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react-dom": "https://esm.sh/react-dom@18.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+        "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime"
+      }
+    }
+    </script>
+    <script>
+      // Defining config before script load for better reliability with some browsers
+      window.tailwind = {
+        config: {
+          darkMode: 'class'
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .gradient-bg {
+            background: linear-gradient(to left, hsl(3,43%,57%), hsl(306,18%,68%), hsl(221,74%,43%));
+        }
+        .gradient-text {
+            background: linear-gradient(to left, hsl(3,43%,57%), hsl(306,18%,68%), hsl(221,74%,43%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            letter-spacing: .05em;
+            animation: 
+              typing 3.5s steps(40, end),
+              blink-caret .5s step-end infinite;
+            max-width: fit-content;
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-black text-black dark:text-white">
+    <div id="root"></div>
+</body>
+</html>

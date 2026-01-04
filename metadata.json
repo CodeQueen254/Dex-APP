@@ -1,0 +1,7 @@
+{
+  "name": "Divine Obute Portfolio",
+  "description": "A high-performance, responsive portfolio for Divine Obute featuring a dynamic project gallery, admin management for content, and a contact system.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
